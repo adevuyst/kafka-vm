@@ -1,7 +1,5 @@
 # kafka-vm
 
-## Libraries
-
 ## Local Kafka Cluster
 To setup a local kafka cluster we are going to use Vagrant and Virtual box and an image.
 ### Installing Vagrant
