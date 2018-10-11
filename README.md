@@ -1,7 +1,7 @@
 # kafka-vm
 
 ## Local Kafka Cluster
-To setup a local kafka cluster we are going to use Vagrant and Virtual box and an image.
+To setup a local kafka cluster we are going to use Vagrant and bash to build and start a Virtual box vm.
 ### Installing Vagrant
 1st make sure vagrant is installed by following the link [here](https://www.vagrantup.com/downloads.html) or if you are using MacOsx you can use brew to install
 ```bash
