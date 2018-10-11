@@ -38,12 +38,12 @@ chmod a+rwx /mnt
 pushd /opt/
 if [ ! -e confluent ]; then
     pushd /tmp/vagrant-downloads
-    if [ ! -e confluent-5.0.0-2.11.zip ]; then
-        wget http://packages.confluent.io/archive/5.0/confluent-5.0.0-2.11.zip
+    if [ ! -e confluent-5.0.0-2.11.tar.gz ]; then
+        wget http://packages.confluent.io/archive/5.0/confluent-5.0.0-2.11.tar.gz
     fi
     popd
 
-    tar xvzf /tmp/vagrant-downloads/confluent-5.0.0-2.11.zip
+    tar xvzf /tmp/vagrant-downloads/confluent-5.0.0-2.11.tar.gz
 fi
 ln -s /opt/confluent-5.0.0 /opt/confluent
 popd
