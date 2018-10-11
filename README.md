@@ -25,3 +25,25 @@ After you have pulled down the vagrant files you can start your Kafka VM:
 $ cd kafka-vm
 $ vagrant up
 ```
+### Verifying The Kafka Setup and Interacting with Vagrant
+SSH Into your vm
+```bash
+$ vagrant ssh 
+```
+Verify that ZooKeeper is running, then hit Ctrl C:
+```bash
+$ telnet localhost 2181 
+Trying 127.0.0.1...
+Connected to localhost.
+Escape character is '^]'.
+^CConnection closed by foreign host.
+```
+Verify that the Kafka test-topic exists and the broker is running: 
+```bash
+$ kafka-topics --list --zookeeper localhost:2181
+__confluent.support.metrics
+_schemas
+test-topic 
+```
+### What's Next?
+You are ready to do local development against your local Kafka install and schema repository.
