@@ -105,3 +105,6 @@ venv.bak/
 
 #idea project
 .idea
+
+#vagrant temp
+.vagrant
