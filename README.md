@@ -44,4 +44,4 @@ _schemas
 test-topic 
 ```
 ### What's Next?
-You are ready to do local development against your local Kafka install and schema repository.
+You are ready to do local development against your local Kafka install and schema repository. Take a look at the [kafka demo project](https://github.com/adevuyst/kafka-demo).
